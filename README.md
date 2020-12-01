@@ -1,5 +1,5 @@
 # hybrid_script
-Script for hybrid
+Scripts for hybrid metagenomic sequencing
 # Hybrid maintext scripts
 Hybrid, extra-deep metagenomic sequencing enables genomic and functional characterization of low-abundance and uncultured species in the human gut microbiome
 

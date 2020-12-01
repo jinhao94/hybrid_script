@@ -1,0 +1,12 @@
+#!/usr/bin/env python
+# -*- coding:utf-8 -*- 
+#author 20190302 jh
+#print each sequence length 
+#usage python ~ input(fasta format)
+import sys,os
+from Bio import SeqIO
+if len(sys.argv) !=2 :
+	print "usage 190302status_sequence_length.py inputfasta"
+	sys.exit()
+for seq_record in SeqIO.parse(sys.argv[1], "fasta"):
+	print (seq_record.id + "\t" + str(len(seq_record.seq)))

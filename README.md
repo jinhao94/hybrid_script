@@ -74,12 +74,12 @@ prodigal -i 02_trim_overhang/02.trimmed.fa -a 02_trim_overhang/02.trimmed.faa -f
 ```
 
 ```
-python Assembly_script/correct_scaf.py 
+python correct_scaf.py 
 usage: correct_scaf.py [-h] -t TABLE -g GFF -a FASTA -o OUTDIR [-f] [-l LOWER]
                        [-u UPPER] [-i INTERVAL] [-m MINLEN]
 correct_scaf.py: error: argument -t/--table is required
 
-python Assembly_script/correct_scaf.py  -t depth.merged -g 02_trim_overhang/02.trimmed.gff -a 02_trim_overhang/02.trimmed.fasta -o merged.corrected/corrected.fa
+python correct_scaf.py  -t depth.merged -g 02_trim_overhang/02.trimmed.gff -a 02_trim_overhang/02.trimmed.fasta -o merged.corrected/corrected.fa
 ``` 
 
 3. filt the sequence length lower than 2Kbp
